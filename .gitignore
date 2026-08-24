@@ -1,0 +1,60 @@
+# ─── 依賴與建置產物 ───
+node_modules/
+dist/
+dist-ssr/
+src-tauri/target/
+src-tauri/gen/schemas/
+*.local
+*.tsbuildinfo
+next-env.d.ts
+
+# ─── 日誌 ───
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── 打包安裝檔（不推上 git）───
+installer/
+*.exe
+*.msi
+*.zip
+src-tauri/examples/
+
+# ─── 本機測試資料（可依你的環境調整）───
+.verify-src/
+.verify-dst/
+test-data/
+temp/
+
+# ─── 環境與密鑰（絕不提交）───
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+secrets.*
+credentials*
+
+# ─── 編輯器與 OS ───
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── 使用者資料與隱私 ───
+# 避免提交含個人路徑／帳號資訊的快照或歷程
+.idx
+personal.json
